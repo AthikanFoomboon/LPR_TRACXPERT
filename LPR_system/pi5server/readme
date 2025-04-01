@@ -1,0 +1,22 @@
+# step 1
+python -m venv venv
+
+# step 2
+#macos
+source .venv/bin/activate
+#windows
+.\env\Scripts\activate
+
+# step 3 
+pip install -r requirements.txt
+
+# step 4  run Python
+uvicorn main:app  --port 8000 --reload
+
+version
+dev Python v3.11.10
+dev Nodejs v18.20.5
+
+exit env:  deactivate
+
+pip freeze > requirements.txt

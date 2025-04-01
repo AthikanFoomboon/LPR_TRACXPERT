@@ -1,0 +1,56 @@
+/* ทำให้เมนูติดอยู่ด้านบน */
+.custom-menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85); /* สีพื้นหลังดำโปร่งใส */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* เงา */
+    border-radius: 0 0 8px 8px; /* ความโค้งมนของขอบ */
+    backdrop-filter: blur(5px); /* เอฟเฟกต์เบลอ */
+}
+
+/* ปรับสีของเมนูที่ถูกเลือก */
+.custom-menu-bar .ant-menu-item-selected {
+    background-color: #2b2b2b !important; /* สีพื้นหลังดำเทา */
+    color: #ffffff !important; /* สีข้อความ */
+}
+
+/* ปรับสีของเมนูเมื่อ hover */
+.custom-menu-bar .ant-menu-item:hover {
+    background-color: #3d3d3d !important; /* สีพื้นหลังเทาเข้ม */
+}
+
+/* ปรับสีของข้อความและไอคอน */
+.custom-menu-bar .ant-menu-item > a,
+.custom-menu-bar .ant-menu-submenu-title > a,
+.custom-menu-bar .ant-menu-item-icon {
+    color: #d9d9d9 !important; /* สีเทาสว่าง */
+}
+
+/* ปรับสีข้อความเมื่อถูกเลือก */
+.custom-menu-bar .ant-menu-item-selected > a,
+.custom-menu-bar .ant-menu-submenu-selected > a {
+    color: #ffffff !important; /* สีขาว */
+}
+
+
+/* Animation สำหรับ Submenu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-menu-bar {
+        font-size: 14px; /* ปรับขนาดตัวอักษร */
+    }
+}

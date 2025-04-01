@@ -1,0 +1,108 @@
+/* ตาราง */
+.ant-table-thead > tr > th {
+    text-align: center; /* จัดหัวข้อให้อยู่ตรงกลาง */
+    background-color: #2e2e2e !important; /* สีพื้นหลังหัวตาราง */
+    color: #f0f0f0 !important; /* สีตัวอักษรหัวตาราง */
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.ant-table-tbody > tr > td {
+    text-align: center; /* จัดข้อมูลให้อยู่ตรงกลาง */
+    color: #cccccc !important; /* สีตัวอักษรข้อมูล */
+    background-color: #242424 !important; /* สีพื้นหลังข้อมูล */
+}
+
+.table-container {
+    background-color: #242424; /* พื้นหลังสีเทาเข้ม */
+    padding: 20px;
+    border-radius: 12px; /* ขอบมน */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* เพิ่มเงา */
+    overflow: hidden;
+}
+
+.ant-table {
+    border-radius: 12px; /* ขอบมน */
+    overflow: hidden;
+    background-color: #242424; /* พื้นหลัง */
+}
+
+.ant-table-thead > tr > th {
+    background-color: #2e2e2e !important; /* หัวตารางสีเทาเข้ม */
+    color: #f0f0f0 !important; /* ตัวอักษรสีขาว */
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.ant-table-tbody > tr > td {
+    background-color: #242424 !important; /* แถวสีเทาเข้ม */
+    color: #cccccc !important; /* สีตัวอักษร */
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* เอฟเฟกต์เปลี่ยนสี */
+}
+
+.ant-table-tbody > tr:hover > td {
+    background-color: #3a3a3a !important; /* สีเทาอ่อนเมื่อ Hover */
+}
+
+/* Pagination */
+.ant-pagination-item {
+    background-color: #2e2e2e !important; /* พื้นหลังของเลขหน้า */
+    border-color: #444444; /* สีขอบ */
+    color: #cccccc; /* สีข้อความ */
+}
+
+.ant-pagination-item:hover {
+    background-color: #444444 !important; /* พื้นหลังเมื่อ Hover */
+    color: #ffffff !important; /* ข้อความเมื่อ Hover */
+}
+
+.ant-pagination-item-active {
+    background-color: #5c9ded !important; /* พื้นหลังเลขหน้าที่เลือก */
+    border-color: #5c9ded !important; /* สีขอบเลขหน้าที่เลือก */
+    color: #ffffff !important; /* สีข้อความ */
+}
+
+/* กล่อง Navbar */
+/* กล่อง Navbar */
+.box-navbar {
+    
+    background-color: #2e2e2e; /* พื้นหลังสีเทาเข้ม */
+    display: flex;
+    justify-content: space-between; /* กระจายเมนูให้เต็ม */
+    align-items: center;
+    margin-top: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* เงา */
+}
+
+/* เมนูเดี่ยว */
+.box-menu {
+    flex: 1; /* กระจายเต็มพื้นที่ */
+    background-color: #3d3d3d; /* สีพื้นหลังเมนู */
+    color: #d0d0d0; /* สีตัวอักษร */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวอักษรหนา */
+    height: 70px; /* ความสูง */
+    line-height: 70px; /* จัดข้อความให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลางแนวนอน */
+    cursor: pointer;
+    transition: all 0.3s ease; /* เพิ่มเอฟเฟกต์ */
+    border-right: 1px solid #2e2e2e; /* เส้นแบ่งระหว่างเมนู */
+}
+
+/* ลบเส้นแบ่งของเมนูสุดท้าย */
+.box-menu:last-child {
+    border-right: none;
+}
+
+/* เมื่อ Hover เมนู */
+.box-menu:hover {
+    background-color: #2a2a2a; /* สีพื้นหลังเมื่อ Hover */
+    color: #ffffff; /* สีตัวอักษรเมื่อ Hover */
+}
+
